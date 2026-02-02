@@ -1,0 +1,74 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #4585ff;
+    display: flex;
+    justify-content: center; /* This affects main-axis alignment */
+    align-items: center; /* This affects cross-axis alignment */
+    color: white;
+    font-size: 32pt;
+}
+
+.minesweeper-grid-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-rows: 2fr 1fr; */
+    /* gap: 30px; */
+}
+
+.minesweeper-cell {
+    width: 50px;
+    height: 50px;
+    background: #c6c6c6;
+    border-bottom: solid 4px #808080;
+    border-right: solid 4px #808080;
+    border-top: solid 4px white;
+    border-left: solid 4px white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minesweeper-cell.explored {
+    background: #aaaaaa;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #808080
+}
+
+.minesweeper-cell > span {
+    /* We need this because `vertical-alig` applies only to `diplay: inline`
+    or display: `table-cell` stuff (so, not `<div>`, for example. */
+    visibility: hidden;
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "MINE-SWEEPER";
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.minesweeper-cell.explored > span {
+    visibility: visible;
+}
+
+.minesweeper-cell > span[data-value="1"] {
+    color: blue;
+}
+
+.minesweeper-cell > span[data-value="2"] {
+    color: green;
+}
+
+.minesweeper-cell > span[data-value="3"] {
+    color: red;
+}

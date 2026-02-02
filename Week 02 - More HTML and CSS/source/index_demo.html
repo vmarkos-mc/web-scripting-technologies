@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Typically included as the first line in every HTML file -->
+<html> <!-- This notifies the browser that html is included (most browsers include this by default) -->
+    <head> <!-- Any page metadata, like scripts to link to etc -->
+        <meta charset="UTF-8">
+        <!--
+            Again, default value, but if omitted, the page might be vulnerable to XSS iframe-based attacks. Example resource:
+            https://portswigger.net/web-security/cross-site-scripting/cheat-sheet#meta-charset-utf7
+        -->
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen"/>
+        <!--
+            If you forget to include "type" as above, you might encounter an "unrecognised MIME" error in case of a strict server protocol of operation.
+
+            "href" points to the CSS file (here using a relative path). If we omit the ".", and start with a "/" then we imply an absolute path (which, possibly, is invalid). If we omit all the "./" prefix we imply that we are looking for a subdirectory of the Currently Working Directory.
+
+            The "media" parameter informs the browser about the target media type (might also be "print", for example).
+        -->
+        <title>
+            XYZ University
+        </title>
+        <!-- 
+            The title tag is the content visible on the browser tab and also crawled by search engines, so this also affects a website's SEO.
+        -->
+    </head>
+    <body> <!-- This is where the main page content lives in -->
+        <p> <!-- The paragraph tag, intended for... paragraphs of text -->
+            Hello, World!
+        </p>
+    </body>
+</html>
