@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'MINE-SWEEPER';
+    src: url('../assets/fonts/MINE-SWEEPER.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url('../assets/fonts/Digital-7Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
