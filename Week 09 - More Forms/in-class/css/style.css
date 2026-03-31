@@ -42,8 +42,11 @@ p + p {
 /* Navbar */
 
 nav {
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(20, 100, 50);
     padding: 10px 20px 10px 20px;
+    gap: 20px;
     /* Padding is used to "push" elements inwards, creating space between the 
     contents and the border of a container */
     /* Padding is used to "push" neighbouring elements away, creating space between the 
@@ -61,10 +64,17 @@ nav ul {
     /* A flexbox is a container type that tries to "cleverly" manage any space given.
     Excellent tutorial: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style-type: none;
     gap: 20px; /* flexbox property that determines the gap between elements */
+}
+
+.login-button {
+    background-color: #404040;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /* Minesweeper grid */

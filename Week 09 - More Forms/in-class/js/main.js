@@ -321,6 +321,8 @@ In JS we heavily use Event-Driven Programming.
     * Observe that we pass as a second argument the function name and not a call to it (i.e., no parentheses!).
 */
 
+
+
 function onWindowLoad() {
     // Things to do once the page has been fully loaded.
     loadMSGrid();
