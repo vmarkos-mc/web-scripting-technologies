@@ -1,0 +1,16 @@
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+.popular-categories__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popular-categories__title:hover + .popular-categories__list {
+    /* background-color: red; */
+    visibility: visible;
+    height: auto;
+}
