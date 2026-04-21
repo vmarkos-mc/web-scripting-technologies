@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- The <meta> tag does not need a closing tag. -->
+        <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+        <!-- media refers to the target medium, e.g., screen or print -->
+        <script type="text/javascript" src="../js/cryptography.js"></script>
+        <script type="text/javascript" src="../js/form.js"></script>
+        <title>
+            Minesweeper
+        </title>
+    </head>
+    <body>
+        <nav>
+            <!-- The <ul> tag represents unordered lists, i.e., bullet lists -->
+            <ul>
+                <!-- The <li> tag stands for list item, i.e., one item of the list -->
+                <li><a href="../index.html">Home</a></li> <!-- An anchor is essentially a "link" to somewhere -->
+                <li><a href="minesweeper.html">Minesweeper</a></li> <!-- An anchor is essentially a "link" to somewhere -->
+            </ul>
+            <ul>
+                <li class="login-button"><a href="login.html">Login</a></li>
+                <li class="login-button"><a href="signup.html">Signup</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!-- The <main> tag is used to indicate where the page's main content is -->
+            <section class="form-section">
+                <h1>Sign up</h1>
+                <p>Fill in the form to register to our game!</p>
+                <!-- Form documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -->
+                <form action="" method="POST" id="signup-form">
+                    <div class="form-row">
+                        <label for="name">E-mail</label>
+                        <input type="email" name="email" id="email" required/>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="passwrod" required/>
+                    </div>
+                    <fieldset>
+                        <legend>Minesweeper experience</legend>
+                        <div class="fieldset-row">
+                            <input type="radio" name="experience" id="none" value="none"/>
+                            <label for="none">None</label>
+                        </div>
+                        <div class="fieldset-row">
+                            <input type="radio" name="experience" id="some" value="some"/>
+                            <label for="some">Some</label>
+                        </div>
+                        <div class="fieldset-row">
+                            <input type="radio" name="experience" id="alot" value="alot"/>
+                            <label for="alot">A lot</label>
+                        </div>
+                    </fieldset>
+                    <div class="form-row">
+                        <input type="submit" value="Sign up!"/>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
