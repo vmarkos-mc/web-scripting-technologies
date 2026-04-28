@@ -1,0 +1,346 @@
+:root {
+    --primary-color: rgb(50, 80, 200);
+    --secondary-color: rgb(20, 100, 50);
+    --primary-highlight-color: white;
+    --secondary-highlight-color: #404040;
+    --ms-background: rgba(198, 198, 198);
+    --ms-border-dark: rgba(132, 132, 132);
+    --ms-border-light: rgba(250, 250, 250);
+}
+
+html {
+    background-color: var(--primary-color);
+    /* RGBA encoding: Red (0-255), Green (0-255), Blue (0-255), alpha (0.0-1.0)
+    Red, Green and Blue might also range in [0.0,1.0]. */
+    color: var(--primary-highlight-color);
+    font-size: 16pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+}
+
+body {
+    display: flex; /* To avoid the redundant vertical overflow */
+    flex-direction: column;
+    margin: 0; /* By default, the <body> tag has a small annoying margin */
+    height: 100%;
+}
+
+main {
+    padding: 20px; /* This adds padding to all sides */
+}
+
+h1 {
+    font-style: italic;
+}
+
+p {
+    /* Typically, we prefer em or ex as a metric unit when it comes to fonts / letters */
+    margin: 0 1em 3em 2em;
+    line-height: 19pt;
+}
+
+h1 + p {
+    /* The next sibling combinator chooses all `p` tags right after `h1` tags */
+    margin-left: 0;
+}
+
+p + p {
+    /* Selects every paragraph except for the first one */
+    color: rgb(225, 137, 59);
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    padding: 10px 20px 10px 20px;
+    gap: 20px;
+    /* Padding is used to "push" elements inwards, creating space between the 
+    contents and the border of a container */
+    /* Padding is used to "push" neighbouring elements away, creating space between the 
+    neighbours and the border of a container */
+}
+
+/* The `tag1 tag2` combinator selects all tag2 tags that are descendants of a tag1 tag.
+In this case, all <a> tags within a <nav> tag */
+nav a {
+    color: var(--primary-highlight-color);
+    text-decoration: none;
+}
+
+nav ul {
+    /* A flexbox is a container type that tries to "cleverly" manage any space given.
+    Excellent tutorial: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 20px; /* flexbox property that determines the gap between elements */
+}
+
+.login-button {
+    background-color: var(--secondary-highlight-color);
+    padding: 10px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+/* Minesweeper grid */
+
+.ms-main-container {
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Justifies content along the main axis, by default horizontally */
+    align-items: center; /* Justifies content along the secondary axis, by default vertically */
+}
+
+.ms-header-container {
+    display: flex;
+    border-bottom: 4px solid var(--ms-border-light);
+    border-right: 4px solid var(--ms-border-light);
+    border-top: 4px solid var(--ms-border-dark);
+    border-left: 4px solid var(--ms-border-dark);
+    background-color: var(--ms-background);
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.ms-header-container > span {
+    background-color: black;
+    color: red;
+    font-family: "Digital Readout", monospace;
+    font-size: 28pt;
+    border-bottom: 2px solid var(--ms-border-light);
+    border-right: 2px solid var(--ms-border-light);
+    border-top: 2px solid var(--ms-border-dark);
+    border-left: 2px solid var(--ms-border-dark);
+    user-select: none;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.ms-grid-container {
+    /* In grids, we have a relative unit, named [fr]ame,
+    which stands for one unit. */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border-bottom: 4px solid var(--ms-border-light);
+    border-right: 4px solid var(--ms-border-light);
+    border-top: 4px solid var(--ms-border-dark);
+    border-left: 4px solid var(--ms-border-dark);
+    /* width: 280px; 280 = 10 * (20 + 4 + 4)
+    height: 280px; */
+    /* box-shadow: inset 3px 3px var(--ms-border-dark); This won't work nicely on edges*/
+}
+
+.ms-grid-border {
+    border: 4px solid var(--ms-background);
+}
+
+.ms-grid-outer-shadow {
+    border-top: 4px solid var(--ms-border-light);
+    border-left: 4px solid var(--ms-border-light);
+    border-bottom: 4px solid var(--ms-border-dark);
+    border-right: 4px solid var(--ms-border-dark);
+}
+
+.ms-grid-cell {
+    font-family: "MINE-SWEEPER";
+    font-size: 12pt;
+    background-color: var(--ms-background);
+    color: black;
+    width: 20px;
+    height: 20px;
+    line-height: 20px; /* This works for a **single line of text** only to vertically center it */
+    border-top: 4px solid var(--ms-border-light);
+    border-left: 4px solid var(--ms-border-light);
+    border-bottom: 4px solid var(--ms-border-dark);
+    border-right: 4px solid var(--ms-border-dark);
+    text-align: center; /* Horizontal text alignment */
+    user-select: none;
+    cursor: pointer; /* This converts the cursor to a pointer, typically a hand-like icon when hovering over the element */
+}
+
+.ms-grid-cell:hover {
+    background-color: brown;
+}
+
+.visited {
+    border: 1px solid var(--ms-border-dark);
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+}
+
+/* This selects all direct children of ms-grid-cells that are images */
+.ms-grid-cell > img {
+    width: 20px;
+}
+
+/* Coloured number CCS classes */
+
+.cell-1 {
+    color: rgba(0, 0, 255);
+}
+
+.cell-2 {
+    color: rgba(0, 130, 0);
+}
+
+.cell-3 {
+    color: rgba(254, 0, 0);
+}
+
+.cell-4 {
+    color: rgba(0, 0, 132);
+}
+
+.cell-5 {
+    color: rgba(132, 0, 0);
+}
+
+.cell-6 {
+    color: rgba(0, 130, 132);
+}
+
+.cell-7 {
+    color: rgba(132, 0, 132);
+}
+
+.cell-8 {
+    color: rgba(117, 117, 117);
+}
+
+/* Modal */
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--secondary-highlight-color);
+    background-color: var(--primary-highlight-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: drop-down 2s;
+}
+
+.modal-container-shift-up {
+    animation: shift-up 250ms;
+}
+
+.modal-container > button {
+    align-self: flex-end;
+    background-color: var(--secondary-highlight-color);
+    color: var(--primary-highlight-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+    padding: 5px 10px;
+    user-select: none;
+}
+
+.modal-container > button:hover {
+    background-color: #cccccc;
+}
+
+/* Blocker */
+
+.blocker {
+    position: absolute; /* Positions an element using absolute coordinates */
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(40, 40, 40, 0.3);
+    backdrop-filter: blur(5px); /* This just blurs background */
+    z-index: 3; /* Determines stacking, i.e., which element appears on top of which other */
+}
+
+/* Forms */
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-section .form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.form-row > input[type="submit"] {
+    align-self: center;
+    background-color: var(--secondary-highlight-color);
+    color: var(--primary-highlight-color);
+    font-size: 14pt;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+}
+
+.form-row > input[type="email"], .form-row > input[type="password"], .form-row input[type="text"] {
+    font-size: 14pt;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+fieldset .fieldset-row {
+    display: flex;
+    gap: 10px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Captcha */
+
+.captcha-container {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.captcha-container > input[type="text"] {
+    width: 60%;
+}
+
+#captcha-canvas {
+    padding: 0;
+    margin: 0;
+}
+
+/* Animations */
+
+@keyframes drop-down {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shift-up {
+    from { transform: translateY(0vh); }
+    to { transform: translateY(-100vh); }
+}
