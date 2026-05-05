@@ -1,0 +1,1 @@
+/*! tailwindcss v4.1.12 | MIT License | https://tailwindcss.com */.work-quote blockquote{text-indent:calc(var(--column)*1 + var(--gutter)*1)}@media (min-width:1024px){.work-quote blockquote{text-indent:calc(var(--column)*4 + var(--gutter)*4)}}

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Pizza Uno|Pizza Uno Sunderland-51 St. Lukes Terrace, Sunderland</title>
+<base href="https://sunderland.pizzauno.co.uk/" />
+<link href="https://sunderland.pizzauno.co.uk/imgd/icon.png" rel="icon" />
+<link rel="stylesheet" type="text/css" href="scss/stylesheet.css" />
+<script type="text/javascript" src="sjs/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="sjs/jquery/ui/external/jquery.cookie.js"></script>
+
+<script type="text/javascript" src="sjs/cm.js"></script>
+<script type="text/javascript" src="sjs/jquery/jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="scss/carousel.css" media="screen" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link media="screen" rel="stylesheet" href="scss/css/bootstrap.min.css">
+<script type="text/javascript" src="sjs/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="sjs/css3-mediaqueries.js"></script>
+<link media="screen" rel="stylesheet" href="scss/bootstrap-select.min.css">
+<script type="text/javascript" src="sjs/bootstrap-select.min.js"></script> 
+</head>
+<body class="Pizza Uno">
+            <div class="hidden-lg text-center applinks" style="    padding: 30px 0px;">
+            <h2 style="color: #fff;">Donwload our app</h2>
+                <a class="android" href="https://play.google.com/store/apps/details?id=uk.co.etakeawaymax.pizzaunosunderlands" target="_blank"><img src="/scss/images/gplay.png" alt="android"></a>
+                        <a class="iphone" href="https://apps.apple.com/gb/app/pizza-uno-sunderland/id6450704975" target="_blank"><img src="/scss/images/appstore.png" alt="iphone"></a>
+              </div>
+<div id="header">
+    <div >
+      </div>
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div id="header-tel-number"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:01915100176">01915100176</a></div>
+        <div id="welcome">
+                    <a href="https://sunderland.pizzauno.co.uk/login">Login</a> or <a href="https://sunderland.pizzauno.co.uk/register">Register</a>                  </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper2">
+    <div class="container">
+      <div class="row">
+        <div id="logo">
+                    <a href="https://sunderland.pizzauno.co.uk/home"><img src="https://sunderland.pizzauno.co.uk/imgd/logo.png" title="Pizza Uno Sunderland" alt="Pizza Uno Sunderland" class="img-responsive" /></a>
+                  </div>
+        <div class="menu-nav">
+          <nav class="navbar" id="menu">
+            <div class="navbar-header"><!--<span class="visible-xs" id="category">MENU</span>-->
+              <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="btn btn-navbar navbar-toggle" type="button"><i class="fa fa-bars"></i></button>
+            </div>
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav">
+                <li class="marglefta"><a class="a" href="https://sunderland.pizzauno.co.uk/home">Home</a></li>
+                <li><a href="menu">Order Online</a></li>
+                          <li><a id="af" href="/feedback">Feedback</a></li>
+                <li class="background-none"><a href="contact" title="Contact Us">Contact Us</a></li>
+                <!-- <li><a class="f" href="https://sunderland.pizzauno.co.uk/account">My Account</a></li>
+                <li><a onclick="return shoppingcartclick();" class="h" href="https://sunderland.pizzauno.co.uk/cart">Shopping Cart</a></li>
+      
+               <li><a href="/about-us">About</a></li>
+                 <li><a id="gift_total" class="d" href="checkout-voucher">Gift Voucher</a></li>
+                 <li><a href="/tablereservation">Book A Table</a></li>
+                  
+               <li><a class="f" href="/gallery">Gallery</a></li>
+                  <li> <a href="grouporder">Group Order</a></li>
+                  
+                <li><a class="e" href="login&a=1" id="loyalty_total">Loyalty Points</a></li>-->
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<div class="row">
+<div id="content" class="col-sm-12 for_border">
+<div id="notification"></div>
+<script type="text/javascript">
+  $(document).ready(function() {
+ 
+    //alert("sss");
+    if(typeof(Storage)!=="undefined" && typeof(localStorage['a1_s1_gkl_'])!=="undefined")  {
+        //alert("ss");
+        $.ajax({
+		url: 'custredatsav',
+		type: 'post',
+		data:{ a1_s1_gkl_:localStorage['a1_s1_gkl_' ] } ,
+		dataType: 'json',
+                success:function(json){
+                
+                }
+        });	        
+    }  
+   
+});
+  </script> 
+
+<div class="container" id="homepage">
+  <div class="row"><!--
+            -->
+    
+    <div id="content" class="col-sm-12">
+      <div id="mobilonly"> 
+ </div>
+      <div id="hometop">
+        <div class="container">
+          <div class="wback">
+<div class="wmessage">
+<!--<h1>Welcome to Pizza Uno Sunderland</h1>-->
+<p>
+	<a class="btn btn-secondary" href="menu">Order Now</a></p>
+
+<div style="clear:both;"></div>
+</div>
+<div class="bottonimg"></div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+      <div id="homebottom">
+        <div class="container">  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="hdemoH1"  class="modal homepostcodemodal" role="dialog"  aria-labelledby="mypostcodepopup1">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div id="hdialog-formH1" title="We are closed now">
+                    <span id="hmessage1">Sorry we are closed. </span>
+                    <span id="hmessage2"></span>
+                    <span id="hmessage3">Please check our opening hours.</span>
+                    <span id="hmessage5" class="hmsg_5" style="display:none">Sorry we do not deliver to your post code.</span>
+                </div>
+            </div>   
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>    
+</div>
+<div id="hdemoH2"  class="modal homepostcodemodal" role="dialog"   aria-labelledby="mypostcodepopup2">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                 Pizza Uno Sunderland                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div id="hdialog-formH2" title="Pizza Uno Sunderland">
+                    <span id="hmessage4">Postcode is not valid.</span>
+                </div>
+            </div>   
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>    
+</div>
+<div id="hdemoH3"  class="modal homepostcodemodal" role="dialog"  aria-labelledby="mypostcodepopup3">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                 Pizza Uno Sunderland                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div id="hdialog-formH3" title="Pizza Uno Sunderland">
+                    <span id="hmessage65">Please Enter The Postcode.</span>
+                </div>
+            </div> 
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div> 
+<div id="hdemoH4" class="modal homepostcodemodal" role="dialog" aria-labelledby="mypostcodepopup4">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+               
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <div id="hdialog-formH4" title="Pizza Uno Sunderland">
+                    <span id="hmessage7">Sorry we do not deliver to your post code.</span>
+                    <span id="hmessage8" style="display:none">You can place an order and Collect from Store.</span>
+                </div>
+            </div> 
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>    
+</div>
+<script type="text/javascript">
+    //  var postcode = '';
+    $(function() {
+        $('#button_search').click(function() {
+            postcode_check();
+        });
+        $('input#postcodeheader').keypress(function(e) {
+           if (e.keyCode == '13') {
+             e.preventDefault();
+             postcode_check();
+             //  $(':button:contains("GO")').click();
+            }
+         });
+        $('#order').click(function() {
+            postcode_check();
+        });
+            });
+        function postcode_formater(postcode) {
+            postcode = postcode.replace(/ /g, "");
+            var l = postcode.slice( - 3);
+            var f = postcode.slice(0, (postcode.length - 3));
+            postcode = f + ' ' + l;
+            postcode = postcode.toUpperCase();
+            return postcode;
+        }
+    function postcode_check(){
+        
+	   
+        var postcode = $("#postcodeheader").val();
+        var order = '0'
+        postcode = postcode_formater(postcode);
+        $('#postcodeheader').val(postcode);
+        if (order == '0') {
+            //var regPostcode = /^([a-zA-Z]){1}([0-9][0-9]|[0-9]|[a-zA-Z][0-9][a-zA-Z]|[a-zA-Z][0-9][0-9]|[a-zA-Z][0-9]){1}([ ])([0-9][a-zA-z][a-zA-z]){1}$/;
+            var regPostcode = /[A-Z]{1,2}[0-9]{1,2}[A-Z]{0,1} ?[0-9][A-Z]{2}/i;//new reg expression for postcode validation.
+                if (regPostcode.test(postcode) == false){
+                        if (postcode.length == 1) {                           
+                            $("#hdemoH3").modal({backdrop:0});
+                            $('#postcodeheader').focus();
+                            return false;
+                        } 
+                        else {
+                            $("#hdemoH2").modal({backdrop:0});
+                            $('#postcodeheader').focus();
+                            return false;
+                        }
+                } else{
+                    
+                    $.post("del-postcodes", {postcode: postcode}, function(data) {  
+                        var json = $.parseJSON(data);
+                        if (json['postcode'] == '') {
+                            $("#hdemoH2").modal({backdrop:false});
+                            $('#postcodeheader').val('');
+                            $('#postcodeheader').focus();
+                        }else if (json['store_url'] != '') {
+                            document.location.href = json['store_url'] + 'menus?postcode=' + json['postcode'] + '&d=' + json['distance'];
+                        }else if (json['nostore'] == '1'){
+                             document.location.href ='menu/#';
+                        }else if (json['delivery_type'] == "collect") {
+                            document.location.href ='menu/#';
+                        }else {
+                            document.location.href ='menu/#'; //menus
+                        }
+                    });
+                }
+            } else {
+                alert('You Have Selected grouporder No need for Postcode search');
+                            //document.location.href = url + 'menus';
+            }
+    }
+</script>
+<!--<script type="text/javascript">$(function(){$(".cycle-slideshow").cycle({timeout:8e3,random:!0})});</script>-->
+<script type="text/javascript">$(document).ready(function(){$("body").addClass("home_page_tel"),$("#homepage .wback").each(function(a){$(this).attr("id","wback_"+a)})});</script> 
+<div style="clear:both;" class="xxx"></div>
+</div>
+</div>
+</div>
+<div id="welcome_txt">
+  <div class="container">
+    <div class="col-sm-12 col-md-5" id="google_map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2293.7290023960472!2d-1.4162175841021125!3d54.90767858033582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e6432e77be4bb%3A0x8a8f75a68e0b01d0!2sPizza%20Uno!5e0!3m2!1sen!2sin!4v1683611902841!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col-sm-12 col-md-3" id="contact_info">
+      <h3>Contact Info</h3>
+      <div class="address">
+        <h5>51 St. Lukes Terrace, Sunderland<br>
+          SR4 6NF</h5>
+      </div>
+      <h4>Telephone Orders Welcome</h4>
+      <a class="padtop" href="tel:01915100176"> 01915100176</a> <a class="padtop" href="tel:"> </a>
+    </div>
+    <div class="col-sm-12 col-md-3 col-md-offset-1" id="open_txt">
+      <h3>Opening Hours</h3>
+      <div class="opening-time">
+        <ul>
+                    <li> <span class="home_day"> sunday </span>
+                                                <span class="home_time">15:45 - 01:00 </span>
+                                                          </li>
+                    <li> <span class="home_day"> monday </span>
+                                                <span class="home_time">15:45 - 01:00</span>
+                                                          </li>
+                    <li> <span class="home_day"> tuesday </span>
+                                                <span class="home_time">15:45 - 01:00</span>
+                                                          </li>
+                    <li> <span class="home_day"> wednesday </span>
+                                                <span class="home_time">15:45 - 01:00</span>
+                                                          </li>
+                    <li> <span class="home_day"> thursday </span>
+                                                <span class="home_time">15:45 - 01:00</span>
+                                                          </li>
+                    <li> <span class="home_day"> friday </span>
+                                                <span class="home_time">15:45 - 01:00</span>
+                                                          </li>
+                    <li> <span class="home_day"> saturday </span>
+                                                <span class="home_time">15:45 - 01:00</span>
+                                                          </li>
+                  </ul>
+      </div>
+            <div class="applinks">
+                <a class="android" href="https://play.google.com/store/apps/details?id=uk.co.etakeawaymax.pizzaunosunderlands" target="_blank"><img src="/scss/images/gplay.png" alt="android"></a>
+                        <a class="iphone" href="https://apps.apple.com/gb/app/pizza-uno-sunderland/id6450704975" target="_blank"><img src="/scss/images/appstore.png" alt="iphone"></a>
+              </div>
+    </div>
+  </div>
+</div>
+<div id="footer_bg">
+  <div class="footer-last-links" id="bottom-links">
+    <div class="container">
+      <div id="links">
+        <ul>
+          <li><a href="" title="Home">Home</a></li>
+          <li><a href="/terms-and-conditions" title="terms &amp; Conditions">Terms &amp; Conditions</a></li>
+          <li><a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+          <li><a title="Cookie Policy" href="/cookie-policy">Cookie Policy</a></li>
+          <li><a href="/service-disclaimer" title="Service Disclaimer">Service Disclaimer</a></li>
+          <!--<li><a href="/about-us">About</a></li>
+          <li><a href="/sitemap" title="Site Map">Site Map</a></li>
+          <li><a href="/contact" title="Contact Us">Contact Us</a></li>-->
+        </ul>
+        <div class="col-sm-12 powered">
+          <p>Pizza Uno Sunderland &copy; 2026. All rights reserved.  Designed By <a href="http://www.etakeawaymax.co.uk/" target="_blank">Takeaway Apps, EPOS - eTakeaway Max</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<span id="footer_cookie"> We use cookies to track usage and preferences <a onclick="acceptcookie()">I Understand</a> </span>
+
+<script type="text/javascript">
+ function acceptcookie(){
+    $('#footer_cookie').hide();
+    $.ajax({
+        url: 'acceptcookie',
+        type: 'post',
+        data: {} ,
+        dataType: 'json',
+        success: function(json) {
+           
+        }
+    });
+}
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
+<script type="text/javascript">
+ $(document).ready(function() {
+$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});     
+$('.cart_prodt_customize').on('click', function() {
+//alert("test");
+var prod_id = $(this).attr('prodid');
+var key= $(this).attr('id');
+$('.customizable_options_widget').load("ajaxcustomoptionswidgets",{product_id: prod_id,key:key},function(response,statusTxt,xhr){
+    if(statusTxt=="success")
+        $('.customizable_options_widget').dialog({
+            autoOpen: true,
+            height: 'auto',
+            width: '50%',
+            modal: true,
+        });
+    if(statusTxt=="error")    
+       alert("Failed");
+    })
+});
+$('#button_cancel_woc').on('click', function() {
+              $('.customizable_options_widget').dialog("close");
+        });
+        
+$('#button_modify_cart').on('click', function() {
+    $.ajax({
+        url: 'modifycart',
+        type: 'post',
+        data: $('.product_custom_options input[type=\'text\'], .product_custom_options input[type=\'hidden\'], .product_custom_options input[type=\'radio\']:checked, .product_custom_options input[type=\'checkbox\']:not(:checked), .product_custom_options select, .product_custom_options textarea'),
+        dataType: 'json',
+        success: function(json) {
+            $('.success, .warning, .attention, information, .error').remove();
+            if (json['error']) {
+                if (json['error']['option']) {
+                    for (i in json['error']['option']) {
+                        $('#option-' + i).after('<span class="error">' + json['error']['option'][i] + '</span>');
+                    }
+                }
+            }
+
+            if (json['success']) {
+                $('#cart').load('mdl-cart #cart > *');
+                $('#cart-total').html(json['total']);
+                $('.customizable_options_widget').dialog("close");              
+            }
+           if (json['no_mod']) {
+           
+            $('#cart').load('mdl-cart #cart > *');
+                $('#cart-total').html(json['total']);
+                $('.customizable_options_widget').dialog("close");
+           } 
+        }
+     });
+ });
+});
+
+    
+</script>
+</body></html>

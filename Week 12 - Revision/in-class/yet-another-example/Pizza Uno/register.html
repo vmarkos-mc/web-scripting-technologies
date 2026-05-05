@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://sunderland.pizzauno.co.uk/register -->
+<html dir="ltr" lang="en" style="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+
+    <title>Register Account|Pizza Uno Sunderland-51 St. Lukes Terrace, Sunderland</title>
+    <!--<base href="index.html">-->
+    <base href=".">
+    <link href="https://sunderland.pizzauno.co.uk/imgd/icon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="sdk.js.download" async="" crossorigin="anonymous"></script>
+    <script id="facebook-jssdk" src="sdk(1).js.download"></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js.download"></script>
+    <script type="text/javascript" src="jquery.cookie.js.download"></script>
+
+    <script type="text/javascript" src="cm.js.download"></script>
+    <script type="text/javascript" src="jquery.jcarousel.min.js.download"></script>
+    <link rel="stylesheet" type="text/css" href="carousel.css" media="screen">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link media="screen" rel="stylesheet" href="bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap.min.js.download"></script>
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <script type="text/javascript" src="css3-mediaqueries.js.download"></script>
+    <link media="screen" rel="stylesheet" href="bootstrap-select.min.css">
+    <script type="text/javascript" src="bootstrap-select.min.js.download"></script>
+</head>
+
+<body class="Register Account">
+    <div class="hidden-lg text-center applinks" style="    padding: 30px 0px;">
+        <h2 style="color: #fff;">Donwload our app</h2>
+        <a class="android" href="https://play.google.com/store/apps/details?id=uk.co.etakeawaymax.pizzaunosunderlands"
+            target="_blank"><img src="gplay.png" alt="android"></a>
+        <a class="iphone" href="https://apps.apple.com/gb/app/pizza-uno-sunderland/id6450704975" target="_blank"><img
+                src="appstore.png" alt="iphone"></a>
+    </div>
+    <div id="header">
+        <div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div id="header-tel-number"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a
+                            href="tel:01915100176">01915100176</a></div>
+                    <div id="welcome">
+                        <a href="login.html">Login</a> or <a href="register.html">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper2">
+            <div class="container">
+                <div class="row">
+                    <div id="logo">
+                        <a href="index.html"><img src="logo.png" title="Pizza Uno Sunderland" alt="Pizza Uno Sunderland"
+                                class="img-responsive"></a>
+                    </div>
+                    <div class="menu-nav">
+                        <nav class="navbar" id="menu">
+                            <div class="navbar-header"><!--<span class="visible-xs" id="category">MENU</span>-->
+                                <button data-target=".navbar-ex1-collapse" data-toggle="collapse"
+                                    class="btn btn-navbar navbar-toggle" type="button"><i
+                                        class="fa fa-bars"></i></button>
+                            </div>
+                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="marglefta"><a class="a" href="index.html">Home</a></li>
+                                    <li><a href="menu.html">Order Online</a></li>
+                                    <li><a id="af" href="https://sunderland.pizzauno.co.uk/feedback">Feedback</a></li>
+                                    <li class="background-none"><a href="https://sunderland.pizzauno.co.uk/contact"
+                                            title="Contact Us">Contact Us</a></li>
+                                    <!-- <li><a class="f" href="https://sunderland.pizzauno.co.uk/account">My Account</a></li>
+                <li><a onclick="return shoppingcartclick();" class="h" href="https://sunderland.pizzauno.co.uk/cart">Shopping Cart</a></li>
+      
+               <li><a href="/about-us">About</a></li>
+                 <li><a id="gift_total" class="d" href="checkout-voucher">Gift Voucher</a></li>
+                 <li><a href="/tablereservation">Book A Table</a></li>
+                  
+               <li><a class="f" href="/gallery">Gallery</a></li>
+                  <li> <a href="grouporder">Group Order</a></li>
+                  
+                <li><a class="e" href="login&a=1" id="loyalty_total">Loyalty Points</a></li>-->
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="content" class="col-sm-12 for_border">
+                <div id="notification"></div>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+
+                        //alert("sss");
+                        if (typeof (Storage) !== "undefined" && typeof (localStorage['a1_s1_gkl_']) !== "undefined") {
+                            //alert("ss");
+                            $.ajax({
+                                url: 'custredatsav',
+                                type: 'post',
+                                data: { a1_s1_gkl_: localStorage['a1_s1_gkl_'] },
+                                dataType: 'json',
+                                success: function (json) {
+
+                                }
+                            });
+                        }
+
+                    });
+                </script>
+
+                <script type="text/javascript" src="jspostcode.js.download"></script>
+                <script type="text/javascript" src="jstelnumbers.js.download"></script>
+                <script>
+                    $(function () {
+                        var availableTags = [
+                            "Bath",
+                            "Birmingham",
+                            "Bradford",
+                            "Brighton and Hove",
+                            "Bristol",
+                            "Cambridge",
+                            "Canterbury",
+                            "Carlisle",
+                            "Chester",
+                            "Chichester",
+                            "Coventry and Warks",
+                            "Derby",
+                            "Durham - Sunderland",
+                            "Ely",
+                            "Exeter",
+                            "Gloucester",
+                            "Hereford",
+                            "Hull",
+                            "Lancaster",
+                            "Leeds",
+                            "Leicester",
+                            "Lincoln",
+                            "Liverpool",
+                            "London",
+                            "Manchester",
+                            "Newcastle",
+                            "Norwich",
+                            "Nottingham",
+                            "Oxford",
+                            "Peterborough",
+                            "Plymouth",
+                            "Portsmouth",
+                            "Preston",
+                            "Ripon",
+                            "Salford",
+                            "Salisbury",
+                            "Sheffield",
+                            "Southampton",
+                            "St Albans",
+                            "Stoke-on-Trent",
+                            "Truro",
+                            "Wakefield",
+                            "Wells",
+                            "Westminister",
+                            "Winchester",
+                            "Wolverhampton",
+                            "Worcester",
+                            "York"
+
+                        ];
+                        $("#city").autocomplete({
+                            source: availableTags
+                        });
+                    });
+                </script>
+                <script type="text/javascript">
+                    function valid(theForm) {
+                        var firstname = theForm.firstname.value;
+                        var lastname = theForm.lastname.value;
+                        var email = theForm.email.value;
+                        var address_1 = theForm.address_1.value;
+                        var city = theForm.city.value;
+                        var postcode = theForm.postcode.value;
+                        var zone_id = theForm.zone_id.value;
+                        var password = theForm.password.value;
+                        var confirm = theForm.confirm.value;
+                        postcode = postcode_formater(postcode);
+                        theForm.postcode.value = postcode;
+                        if (firstname == "") {
+                            alert("Please Enter the Firstname");
+                            theForm.firstname.focus();
+                            return (false);
+                        }
+                        if (lastname == "") {
+                            alert("Please Enter the Lastname");
+                            theForm.lastname.focus();
+                            return (false);
+                        }
+                        if (email == "") {
+                            alert("Please enter the Email");
+                            theForm.email.focus();
+                            return (false);
+                        }
+                        else {
+                            apos = theForm.email.value.indexOf("@")
+                            dotpos = theForm.email.value.lastIndexOf(".")
+                            if (apos < 1 || dotpos - apos < 2) {
+                                alert("Invalid Email Address.");
+                                theForm.email.focus();
+                                return (false);
+                            }
+                        }
+                        if (theForm.telephone.value == "") {
+                            alert("Please enter the Phone");
+                            theForm.telephone.focus();
+                            return (false);
+                        }
+                        if (!checkUKTelephone(theForm.telephone.value)) {
+                            alert(telNumberErrors[telNumberErrorNo]);
+                            theForm.telephone.focus();
+                            return false;
+                        }
+                        if (address_1 == "") {
+                            alert("Please Enter Your Adress");
+                            theForm.address_1.focus();
+                            return (false);
+                        }
+                        if ((address_1.length < 3) || (address_1.length > 128)) {
+                            alert("Address must be between 3 and 128 characters!");
+                            theForm.address_1.focus();
+                            return (false);
+                        }
+                        if (city == "") {
+                            alert("Please Enter Your City");
+                            theForm.city.focus();
+                            return (false);
+                        }
+                        if ((city.length < 2) || (city.length > 128)) {
+                            alert("City must be between 2 and 128 characters!");
+                            theForm.city.focus();
+                            return (false);
+                        }
+                        if (theForm.postcode.value == "") {
+                            alert("Please enter the Post Code");
+                            theForm.postcode.focus();
+                            return (false);
+                        }
+                        if (!checkPostCode(theForm.postcode.value)) {
+
+                            alert("Postcode has an invalid format");
+                            theForm.postcode.focus();
+                            return false;
+                        }
+                        if (zone_id == "") {
+                            alert("Please select a region / state!");
+                            theForm.zone_id.focus();
+                            return (false);
+                        }
+                        if (password == "") {
+                            alert("Please Enter password");
+                            theForm.password.focus();
+                            return (false);
+                        }
+                        if ((password.length < 4) || (password.length > 20)) {
+                            alert("Password must be between 4 and 20 characters!");
+                            theForm.password.focus();
+                            return (false);
+                        }
+                        if (confirm == "") {
+                            alert("Please Enter confirm password");
+                            theForm.confirm.focus();
+                            return (false);
+                        }
+                        if (password != confirm) {
+                            alert("Password Missmatch");
+                            theForm.confirm.focus();
+                            return (false);
+                        }
+                        if (theForm.captcha.value == "") {
+                            alert("enter captcha!");
+                            theForm.captcha.focus();
+                            return (false);
+                        }
+                    }
+                    function postcode_formater(postcode) {
+                        postcode = postcode.replace(/ /g, "");
+
+                        var l = postcode.slice(-3);
+                        var f = postcode.slice(0, (postcode.length - 3));
+                        postcode = f + ' ' + l;
+                        postcode = postcode.toUpperCase();
+
+                        return postcode;
+                    }
+                </script>
+                <div id="content" class="col-sm-8 reg">
+                    <h1><span id="head-title">Register Account</span></h1>
+
+                    <p>If you already have an account with us, please login at the <a href="login.html">login page</a>.
+                    </p>
+
+                    <form action="register.html" method="post" enctype="multipart/form-data"
+                        onsubmit="return valid(this);">
+                        <h2>Your Personal Details</h2>
+                        <div class="content">
+                            <div class="form form-group">
+                                <label class="col-sm-3 control-label">
+                                    First Name:<span class="required">*</span> </label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" name="firstname" id="firstname" value="">
+                                </div>
+
+                                <label class="col-sm-3 control-label">
+                                    Last Name:<span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="lastname" name="lastname" value="">
+                                </div>
+
+                                <label class="col-sm-3 control-label">
+                                    E-Mail:<span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="email" name="email" value="">
+                                </div>
+
+                                <label class="col-sm-3 control-label">
+                                    Telephone:<span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="telephone" name="telephone" value="">
+                                </div>
+
+                                <label class="col-sm-3 control-label">
+                                    Fax:</label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" name="fax" value="">
+                                </div>
+                                <input type="hidden" name="company">
+                                <input type="hidden" name="company_id">
+                                <input type="hidden" name="tax_id">
+                                <!--<input type="hidden" name="address_2">-->
+                                <input type="hidden" name="tax_id">
+
+
+                            </div>
+                        </div>
+                        <h2>Your Address</h2>
+                        <div class="content">
+                            <div class="form form-group">
+
+                                <!--<tr style="display: none;">
+                    Business Type:                                   </tr>-->
+
+                                <label class="col-sm-3 control-label">
+                                    Post Code:<span id="postcode-required" class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="postcode" name="postcode" value="">
+                                </div>
+                                <div class="col-sm-2"><a class="button" id="postcodelookup">FIND</a></div>
+                                <span class="error" id="error_postcode"> </span>
+
+                                <div id="reg_addr_div" style="display:none;">
+                                    <label class="col-sm-3 control-label">
+                                        <span>Address:</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="sel_reg_address"></select>
+                                    </div>
+                                </div>
+
+                                <label class="col-sm-3 control-label">
+                                    Address 1:<span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input class="form-control" type="text" name="address_1" id="address_1" value="">
+                                    <!-- <textarea name="address_1" id="address_1"></textarea>-->
+                                </div>
+
+                                <label class="col-sm-3 control-label">
+                                    Address 2:</label>
+                                <div class="col-sm-7">
+                                    <input class="form-control" type="text" name="address_2" id="address_2" value="">
+                                </div>
+                                <!-- <textarea name="address_1" id="address_1"></textarea>-->
+
+
+
+                                <label class="col-sm-3 control-label">
+                                    City:<span class="required">*</span> </label>
+                                <div class="col-sm-7">
+                                    <input type="text" class="form-control" id="city" name="city" value="Manchester">
+                                </div>
+
+
+                                <input type="hidden" name="country_id" value="222">
+                                <input type="hidden" name="zone_id" value="3576">
+                                <!--
+                <label  class="col-sm-3 control-label">
+                    <span class="required">*</span> Country:</label>
+                     <div class="col-sm-7">
+                    <select name="country_id" class="form-control" >
+                            <option value=""> --- Please Select --- </option>
+                                                                                    <option value="" selected="selected"></option>
+                                                        <option value=""></option>
+                                                                                </select>
+                        </div>
+              
+                 <label  class="col-sm-3 control-label">
+                    <span class="required">*</span> Region / State:                    </label>
+                    <div class="col-sm-7">
+                    <select name="zone_id" id="zone_id" class="form-control">
+                        </select>
+                        </div>
+                        -->
+
+                            </div>
+                        </div>
+                        <h2>Your Password</h2>
+                        <div class="content">
+                            <div class="form form-group">
+                                <label for="password" class="col-sm-3 control-label">
+                                    Password:<span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="password" name="password" value="">
+                                </div>
+
+                                <label class="col-sm-3 control-label">
+                                    Password Confirm:<span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="password" class="form-control" id="confirm" name="confirm" value="">
+                                </div>
+
+                            </div>
+                            <div class="form form-group">
+                                <label class="col-sm-3 control-label">
+                                    Enter the code<span class="required">*</span></label>
+                                <div class="col-sm-7">
+                                    <input type="text" name="captcha" class="form-control">
+                                    <div id="img_url">
+                                        <img src="captcha" alt="CAPTCHA">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>Newsletter</h2>
+                        <label class="col-sm-12 control-label">
+                            <div class="newsletter">Subscribe newsletter to receive exclusive offers and special
+                                discounts</div>
+                        </label>
+
+                        <div class="form form-group">
+                            <label class="col-sm-3 control-label">
+                                Subscribe:</label>
+                            <div class="col-sm-7" id="subscribe">
+                                <input type="radio" name="newsletter" value="1">
+                                Yes <input type="radio" name="newsletter" value="0" checked="">
+                                No
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 buttons registerterms">
+                            <div class="right">
+                                <input type="checkbox" name="agree" value="1">
+                                I have read and agree to the <a class="colorbox"
+                                    alt="https://sunderland.pizzauno.co.uk/info/privacy-policy"><b>Privacy
+                                        Policy</b></a>
+                                <input type="submit" value="Continue" class="button">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="terms-popup" class="modal fade in" tabindex="-1" role="dialog" data-backdrop="false"
+                    aria-hidden="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">Privacy Policy<button type="button" class="close"
+                                    data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal" class="btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript"><!-
+$('input[name=\'customer_group_id\']:checked').live('change', function() {
+var customer_group = [];
+	
+	
+
+if (customer_group[this.value]) {
+if (customer_group[this.value]['company_id_display'] == '1') {
+$('#company-id-display').show();
+} else {
+$('#company-id-display').hide();
+}
+	
+if (customer_group[this.value]['company_id_required'] == '1') {
+$('#company-id-required').show();
+} else {
+$('#company-id-required').hide();
+}
+	
+if (customer_group[this.value]['tax_id_display'] == '1') {
+$('#tax-id-display').show();
+} else {
+$('#tax-id-display').hide();
+}
+	
+if (customer_group[this.value]['tax_id_required'] == '1') {
+$('#tax-id-required').show();
+} else {
+$('#tax-id-required').hide();
+}	
+}
+});
+
+$('input[name=\'customer_group_id\']:checked').trigger('change');
+//--></script>
+                <script type="text/javascript"><!-
+
+$(document).on('click', '.registerterms a', function () {
+$('#terms-popup .modal-body').html('')
+$('#terms-popup .modal-body').load('info-info&information_id=3', function (data) {
+$('#terms-popup').modal('show');
+$('#terms-popup .modal-body').css('overflow-y', 'auto'); 
+$('#terms-popup .modal-body').css('max-height', $(window).height() * 0.8);
+});
+});
+$('select[name=\'country_id\']').bind('change', function() {
+$.ajax({
+url: 'register-country&country_id=' + this.value,
+dataType: 'json',
+beforeSend: function() {
+$('select[name=\'country_id\']').after('<span class="wait">&nbsp;<img src="catalog/view/theme/default/image/loading.gif" alt="" /></span>');
+},
+complete: function() {
+$('.wait').remove();
+},			
+success: function(json) {
+if (json['postcode_required'] == '1') {
+$('#postcode-required').show();
+} else {
+$('#postcode-required').hide();
+}
+	
+html = '<option value=""> --- Please Select --- </option>';
+	
+if (json['zone'] != '') {
+for (i = 0; i < json['zone'].length; i++) {
+html += '<option value="' + json['zone'][i]['zone_id'] + '"';
+	
+if (json['zone'][i]['zone_id'] == '3576') {
+html += ' selected="selected"';
+}
+	
+html += '>' + json['zone'][i]['name'] + '</option>';
+}
+} else {
+html += '<option value="0" selected="selected"> --- None --- </option>';
+}
+	
+$('select[name=\'zone_id\']').html(html);
+},
+error: function(xhr, ajaxOptions, thrownError) {
+alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+}
+});
+});
+
+$('select[name=\'country_id\']').trigger('change');
+//--></script>
+                <script type="text/javascript"><!-
+$(document).on("click","#postcodelookup",function(){
+addr_postcode = postcode_formater($('#postcode').val());
+//check postcode validation
+ 
+$('#postcode').val(addr_postcode);
+$('#sel_reg_address').html('<option value="">Choose address</option>');
+$.ajax({
+url: 'postcodelookup',
+type: 'get',
+data: {postcode: addr_postcode},
+dataType: 'json',
+success: function(json) {
+$('#error_postcode').html('');
+$('#address_1').val('');
+$('#city').val('');
+if(json['error']){
+$('#error_postcode').html('No matching Postcode in our database');
+$('#reg_addr_div').hide();
+}else if(json['address'] && json['address']!='[]') {
+// console.log(json['address']);
+var obj = jQuery.parseJSON(json['address']);
+var optn = '';
+$.each(obj, function(key,value) {
+ optn+='<option value="'+value.postcode+'--'+value.address+'--'+value.city+'">'+value.address+','+value.city+'</option>';
+});
+$('#sel_reg_address').append(optn);
+$('#reg_addr_div').show();
+$('#error_postcode').html('');
+}else if (json['street'] && json['city']) {
+$('#address_1').val(json['street']);
+$('#city').val(json['city']);
+$('#error_postcode').html('');
+$('#reg_addr_div').hide();
+}else if (json['street']){
+$('#address_1').val(json['street']);   
+//$('.post_code_warning').html('please enter details manually');
+$('#error_postcode').html('');
+$('#reg_addr_div').hide();
+}else if (json['city']){
+$('#city').val(json['city']);
+$('#error_postcode').html('');
+$('#reg_addr_div').hide();
+}else{
+$('#error_postcode').html('please enter details manually');
+$('#reg_addr_div').hide();
+} 
+}
+});
+});
+
+ 
+$("#sel_reg_address").on('change',function() {
+var addr = $(this).val();
+if(addr) {
+var res = addr.split('--');
+$('#address_1').val(res[1]);
+$('#city').val(res[2]);
+$('#postcode').val(res[0]);
+}
+});
+//--></script>
+                <div id="column-right" class="col-sm-4 hidden-xs">
+
+                    <div id="side_cart_open">
+
+                        <div class="applinks">
+
+                            <a class="android"
+                                href="https://play.google.com/store/apps/details?id=uk.co.etakeawaymax.pizzaunosunderlands"
+                                target="_blank"><img src="gplay.png" alt="android"></a>
+                            <a class="iphone" href="https://apps.apple.com/gb/app/pizza-uno-sunderland/id6450704975"
+                                target="_blank"><img src="appstore.png" alt="iphone"></a>
+                        </div>
+                    </div>
+
+
+                    <div class="box" id="sid_account">
+                        <div class="box-heading">Account</div>
+                        <div class="box-content">
+                            <ul>
+                                <li><a href="login.html">Login</a> / <a href="register.html">Register</a></li>
+                                <li><a href="https://sunderland.pizzauno.co.uk/forgotten">Forgotten Password</a></li>
+                                <li><a href="https://sunderland.pizzauno.co.uk/account">My Account</a></li>
+
+                                <li><a href="https://sunderland.pizzauno.co.uk/order">Order History</a></li>
+                                <!--<li><a href="https://sunderland.pizzauno.co.uk/transaction">Transactions</a></li>-->
+                                <li><a href="https://sunderland.pizzauno.co.uk/newsletter">Newsletter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a class="btop" onclick="$(&#39;html, body&#39;).animate({scrollTop:0});"><i
+                            class="fa fa-sort-asc"></i></a>
+
+                </div>
+                <div style="clear:both;" class="xxx"></div>
+            </div>
+        </div>
+    </div>
+    <div id="welcome_txt">
+        <div class="container">
+            <div class="col-sm-12 col-md-5" id="google_map">
+                <iframe src="embed.html" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-sm-12 col-md-3" id="contact_info">
+                <h3>Contact Info</h3>
+                <div class="address">
+                    <h5>51 St. Lukes Terrace, Sunderland<br>
+                        SR4 6NF</h5>
+                </div>
+                <h4>Telephone Orders Welcome</h4>
+                <a class="padtop" href="tel:01915100176"> 01915100176</a> <a class="padtop" href="tel:"> </a>
+            </div>
+            <div class="col-sm-12 col-md-3 col-md-offset-1" id="open_txt">
+                <h3>Opening Hours</h3>
+                <div class="opening-time">
+                    <ul>
+                        <li> <span class="home_day"> sunday </span>
+                            <span class="home_time">15:45 - 01:00 </span>
+                        </li>
+                        <li> <span class="home_day"> monday </span>
+                            <span class="home_time">15:45 - 01:00</span>
+                        </li>
+                        <li> <span class="home_day"> tuesday </span>
+                            <span class="home_time">15:45 - 01:00</span>
+                        </li>
+                        <li> <span class="home_day"> wednesday </span>
+                            <span class="home_time">15:45 - 01:00</span>
+                        </li>
+                        <li> <span class="home_day"> thursday </span>
+                            <span class="home_time">15:45 - 01:00</span>
+                        </li>
+                        <li> <span class="home_day"> friday </span>
+                            <span class="home_time">15:45 - 01:00</span>
+                        </li>
+                        <li> <span class="home_day"> saturday </span>
+                            <span class="home_time">15:45 - 01:00</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="applinks">
+                    <a class="android"
+                        href="https://play.google.com/store/apps/details?id=uk.co.etakeawaymax.pizzaunosunderlands"
+                        target="_blank"><img src="gplay.png" alt="android"></a>
+                    <a class="iphone" href="https://apps.apple.com/gb/app/pizza-uno-sunderland/id6450704975"
+                        target="_blank"><img src="appstore.png" alt="iphone"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer_bg">
+        <div class="footer-last-links" id="bottom-links">
+            <div class="container">
+                <div id="links">
+                    <ul>
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="https://sunderland.pizzauno.co.uk/terms-and-conditions"
+                                title="terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                        <li><a href="https://sunderland.pizzauno.co.uk/privacy-policy" title="Privacy Policy">Privacy
+                                Policy</a></li>
+                        <li><a title="Cookie Policy" href="https://sunderland.pizzauno.co.uk/cookie-policy">Cookie
+                                Policy</a></li>
+                        <li><a href="https://sunderland.pizzauno.co.uk/service-disclaimer"
+                                title="Service Disclaimer">Service Disclaimer</a></li>
+                        <!--<li><a href="/about-us">About</a></li>
+          <li><a href="/sitemap" title="Site Map">Site Map</a></li>
+          <li><a href="/contact" title="Contact Us">Contact Us</a></li>-->
+                    </ul>
+                    <div class="col-sm-12 powered">
+                        <p>Pizza Uno Sunderland © 2026. All rights reserved. Designed By <a
+                                href="http://www.etakeawaymax.co.uk/" target="_blank">Takeaway Apps, EPOS - eTakeaway
+                                Max</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span id="footer_cookie"> We use cookies to track usage and preferences <a onclick="acceptcookie()">I Understand</a>
+    </span>
+
+    <script type="text/javascript">
+        function acceptcookie() {
+            $('#footer_cookie').hide();
+            $.ajax({
+                url: 'acceptcookie',
+                type: 'post',
+                data: {},
+                dataType: 'json',
+                success: function (json) {
+
+                }
+            });
+        }
+    </script>
+
+
+
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(document).on('click', '.navbar-collapse.in', function (e) {
+                if ($(e.target).is('a')) {
+                    $(this).collapse('hide');
+                }
+            });
+            $('.cart_prodt_customize').on('click', function () {
+                //alert("test");
+                var prod_id = $(this).attr('prodid');
+                var key = $(this).attr('id');
+                $('.customizable_options_widget').load("ajaxcustomoptionswidgets", { product_id: prod_id, key: key }, function (response, statusTxt, xhr) {
+                    if (statusTxt == "success")
+                        $('.customizable_options_widget').dialog({
+                            autoOpen: true,
+                            height: 'auto',
+                            width: '50%',
+                            modal: true,
+                        });
+                    if (statusTxt == "error")
+                        alert("Failed");
+                })
+            });
+            $('#button_cancel_woc').on('click', function () {
+                $('.customizable_options_widget').dialog("close");
+            });
+
+            $('#button_modify_cart').on('click', function () {
+                $.ajax({
+                    url: 'modifycart',
+                    type: 'post',
+                    data: $('.product_custom_options input[type=\'text\'], .product_custom_options input[type=\'hidden\'], .product_custom_options input[type=\'radio\']:checked, .product_custom_options input[type=\'checkbox\']:not(:checked), .product_custom_options select, .product_custom_options textarea'),
+                    dataType: 'json',
+                    success: function (json) {
+                        $('.success, .warning, .attention, information, .error').remove();
+                        if (json['error']) {
+                            if (json['error']['option']) {
+                                for (i in json['error']['option']) {
+                                    $('#option-' + i).after('<span class="error">' + json['error']['option'][i] + '</span>');
+                                }
+                            }
+                        }
+
+                        if (json['success']) {
+                            $('#cart').load('mdl-cart #cart > *');
+                            $('#cart-total').html(json['total']);
+                            $('.customizable_options_widget').dialog("close");
+                        }
+                        if (json['no_mod']) {
+
+                            $('#cart').load('mdl-cart #cart > *');
+                            $('#cart-total').html(json['total']);
+                            $('.customizable_options_widget').dialog("close");
+                        }
+                    }
+                });
+            });
+        });
+
+
+    </script>
+    <veepn-lock-screen><template shadowrootmode="open">
+            <style>
+                html {
+                    box-sizing: border-box;
+                    text-size-adjust: 100%;
+                    word-break: normal;
+                    tab-size: 4
+                }
+
+                *,
+                :before,
+                :after {
+                    background-repeat: no-repeat;
+                    box-sizing: border-box
+                }
+
+                :before,
+                :after {
+                    text-decoration: inherit;
+                    vertical-align: inherit
+                }
+
+                * {
+                    padding: 0;
+                    margin: 0
+                }
+
+                hr {
+                    overflow: visible;
+                    height: 0;
+                    color: inherit;
+                    border: 0;
+                    border-top: 1px solid
+                }
+
+                details,
+                main {
+                    display: block
+                }
+
+                summary {
+                    display: list-item
+                }
+
+                small {
+                    font-size: 80%
+                }
+
+                [hidden] {
+                    display: none !important
+                }
+
+                abbr[title] {
+                    border-bottom: none;
+                    text-decoration: underline;
+                    text-decoration: underline dotted
+                }
+
+                a {
+                    background-color: transparent
+                }
+
+                a:active,
+                a:hover {
+                    outline-width: 0
+                }
+
+                code,
+                kbd,
+                pre,
+                samp {
+                    font-family: monospace
+                }
+
+                pre {
+                    font-size: 1em
+                }
+
+                b,
+                strong {
+                    font-weight: bolder
+                }
+
+                sub,
+                sup {
+                    font-size: 75%;
+                    line-height: 0;
+                    position: relative;
+                    vertical-align: baseline
+                }
+
+                sub {
+                    bottom: -.25em
+                }
+
+                sup {
+                    top: -.5em
+                }
+
+                table {
+                    border-color: inherit;
+                    text-indent: 0
+                }
+
+                iframe {
+                    border-style: none
+                }
+
+                input {
+                    border-radius: 0
+                }
+
+                [type=number]::-webkit-inner-spin-button,
+                [type=number]::-webkit-outer-spin-button {
+                    height: auto
+                }
+
+                [type=search] {
+                    appearance: textfield;
+                    outline-offset: -2px
+                }
+
+                [type=search]::-webkit-search-decoration {
+                    appearance: none
+                }
+
+                textarea {
+                    overflow: auto;
+                    resize: vertical
+                }
+
+                button,
+                input,
+                optgroup,
+                select,
+                textarea {
+                    font: inherit;
+                    color: inherit
+                }
+
+                optgroup {
+                    font-weight: 700
+                }
+
+                button {
+                    overflow: visible
+                }
+
+                button,
+                select {
+                    text-transform: none
+                }
+
+                button,
+                [type=button],
+                [type=reset],
+                [type=submit],
+                [role=button] {
+                    cursor: pointer
+                }
+
+                button::-moz-focus-inner,
+                [type=button]::-moz-focus-inner,
+                [type=reset]::-moz-focus-inner,
+                [type=submit]::-moz-focus-inner {
+                    border-style: none;
+                    padding: 0
+                }
+
+                button,
+                html [type=button],
+                [type=reset],
+                [type=submit] {
+                    appearance: auto
+                }
+
+                button,
+                input,
+                select,
+                textarea {
+                    background-color: transparent;
+                    border-style: none
+                }
+
+                button:-moz-focusring,
+                [type=button]::-moz-focus-inner,
+                [type=reset]::-moz-focus-inner,
+                [type=submit]::-moz-focus-inner {
+                    outline: 1px dotted ButtonText
+                }
+
+                select {
+                    appearance: none
+                }
+
+                a:focus,
+                button:focus,
+                input:focus,
+                select:focus,
+                textarea:focus {
+                    outline-width: 0
+                }
+
+                select::-ms-expand {
+                    display: none
+                }
+
+                select::-ms-value {
+                    color: currentcolor
+                }
+
+                legend {
+                    border: 0;
+                    color: inherit;
+                    display: table;
+                    white-space: normal;
+                    max-width: 100%
+                }
+
+                ::-webkit-file-upload-button {
+                    appearance: auto;
+                    color: inherit;
+                    font: inherit
+                }
+
+                [disabled] {
+                    cursor: default
+                }
+
+                img {
+                    border-style: none
+                }
+
+                progress {
+                    vertical-align: baseline
+                }
+
+                [aria-busy=true] {
+                    cursor: progress
+                }
+
+                [aria-controls] {
+                    cursor: pointer
+                }
+
+                [aria-disabled=true] {
+                    cursor: default
+                }
+
+                ul,
+                ol {
+                    list-style-type: none
+                }
+
+                figure {
+                    margin: 0
+                }
+
+                @keyframes slide-in {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(16px)
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0)
+                    }
+                }
+
+                .gradient-blue {
+                    background: radial-gradient(106.41% 128.47% at 50.15% 128.47%, #23abff, #3066ff)
+                }
+
+                .gradient-green {
+                    background: radial-gradient(92.26% 118.88% at 50.15% .13%, #00c3c3, #00aab3)
+                }
+
+                .gradient-purple {
+                    background: radial-gradient(165.12% 115.56% at 50.15% .13%, #a15aff, #00a0eb)
+                }
+
+                .bg-blue {
+                    background-color: #f2f5ff
+                }
+
+                .bg-purple {
+                    background-color: #f7f0ff
+                }
+
+                .bg-green {
+                    background-color: #ebffed
+                }
+
+                .lock-screen {
+                    font-family: FigtreeVF, sans-serif;
+                    letter-spacing: normal;
+                    position: fixed;
+                    z-index: 2147483638;
+                    right: 24px;
+                    bottom: 24px;
+                    width: 327px;
+                    border-radius: 24px;
+                    overflow: hidden;
+                    box-shadow: 0 24px 32px #00000014;
+                    animation: slide-in .3s ease-in-out forwards
+                }
+
+                .lock-screen__content {
+                    position: relative;
+                    padding: 24px 24px 64px
+                }
+
+                .lock-screen__close {
+                    position: absolute;
+                    top: 16px;
+                    right: 16px;
+                    width: 24px;
+                    height: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: .5
+                }
+
+                .lock-screen__label {
+                    height: 26px;
+                    width: fit-content;
+                    border-radius: 50px;
+                    background-color: #fff3;
+                    padding-inline: 16px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 8px;
+                    color: #fff;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin: -8px auto 16px
+                }
+
+                .lock-screen__title {
+                    color: #fff;
+                    text-align: center;
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    margin-bottom: 8px
+                }
+
+                .lock-screen__description {
+                    color: #f5f6f7;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 20px
+                }
+
+                .lock-screen__description b {
+                    font-weight: 600
+                }
+
+                .lock-screen__card {
+                    position: relative;
+                    z-index: 1;
+                    margin-top: -44px;
+                    background-color: #fff;
+                    border-radius: 24px;
+                    padding: 32px 20px 20px
+                }
+
+                .lock-screen__inner {
+                    margin-bottom: 24px
+                }
+
+                .lock-screen__submit {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    height: 40px;
+                    width: 100%;
+                    border-radius: 12px;
+                    padding-inline: 16px;
+                    background-color: #f70;
+                    color: #fff;
+                    margin-bottom: 16px
+                }
+
+                .lock-screen__skip {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #82829c;
+                    margin-inline: auto
+                }
+
+                .price-card {
+                    border: 1px solid #f2f2fc;
+                    background: linear-gradient(254.14deg, #fafbff .04%, #f5f8ff 100.04%);
+                    border-radius: 24px;
+                    padding: 24px 28px
+                }
+
+                .price-card__label {
+                    color: #4a5764;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 20px;
+                    text-transform: uppercase;
+                    margin-bottom: 16px
+                }
+
+                .price-card__price {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    column-gap: 2px;
+                    margin-bottom: 12px
+                }
+
+                .price-card__currency {
+                    color: #515478;
+                    font-size: 18px;
+                    line-height: 28px
+                }
+
+                .price-card__number {
+                    color: #14142a;
+                    text-align: center;
+                    font-size: 64px;
+                    line-height: 54px
+                }
+
+                .price-card__wrap {
+                    display: flex;
+                    flex-direction: column
+                }
+
+                .price-card__decimal {
+                    color: #515478;
+                    font-size: 18px;
+                    line-height: 28px;
+                    font-weight: 600
+                }
+
+                .price-card__period {
+                    color: #515478;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-top: -6px
+                }
+
+                .price-card__discount {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 12px
+                }
+
+                .price-card__discount-divider {
+                    position: absolute;
+                    z-index: 0;
+                    top: 50%;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #dbe2f9;
+                    transform: translateY(-50%)
+                }
+
+                .price-card__discount-icon {
+                    position: absolute;
+                    z-index: 1;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+
+                .price-card__discount-text {
+                    position: relative;
+                    z-index: 2;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 18px
+                }
+
+                .price-card__features {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 16px
+                }
+
+                .price-card__feature {
+                    color: #222e3a;
+                    font-size: 14px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px
+                }
+
+                .price-card__feature:before {
+                    content: "";
+                    display: block;
+                    width: 4px;
+                    height: 4px;
+                    background-color: #20df9e;
+                    border-radius: 50%;
+                    flex-shrink: 0
+                }
+
+                .features-list {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 12px
+                }
+
+                .features-list__item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 6px
+                }
+
+                .features-list__icon {
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center
+                }
+
+                .features-list__text {
+                    color: #293a53;
+                    text-align: center;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -.1px
+                }
+            </style>
+        </template>
+        <style>
+            @font-face {
+                font-family: FigtreeVF;
+                src: url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2 supports variations"), url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2-variations");
+                font-weight: 100 1000;
+                font-display: swap
+            }
+        </style>
+    </veepn-lock-screen><veepn-intro-offer><template shadowrootmode="open">
+            <style>
+                html {
+                    box-sizing: border-box;
+                    text-size-adjust: 100%;
+                    word-break: normal;
+                    tab-size: 4
+                }
+
+                *,
+                :before,
+                :after {
+                    background-repeat: no-repeat;
+                    box-sizing: border-box
+                }
+
+                :before,
+                :after {
+                    text-decoration: inherit;
+                    vertical-align: inherit
+                }
+
+                * {
+                    padding: 0;
+                    margin: 0
+                }
+
+                hr {
+                    overflow: visible;
+                    height: 0;
+                    color: inherit;
+                    border: 0;
+                    border-top: 1px solid
+                }
+
+                details,
+                main {
+                    display: block
+                }
+
+                summary {
+                    display: list-item
+                }
+
+                small {
+                    font-size: 80%
+                }
+
+                [hidden] {
+                    display: none !important
+                }
+
+                abbr[title] {
+                    border-bottom: none;
+                    text-decoration: underline;
+                    text-decoration: underline dotted
+                }
+
+                a {
+                    background-color: transparent
+                }
+
+                a:active,
+                a:hover {
+                    outline-width: 0
+                }
+
+                code,
+                kbd,
+                pre,
+                samp {
+                    font-family: monospace
+                }
+
+                pre {
+                    font-size: 1em
+                }
+
+                b,
+                strong {
+                    font-weight: bolder
+                }
+
+                sub,
+                sup {
+                    font-size: 75%;
+                    line-height: 0;
+                    position: relative;
+                    vertical-align: baseline
+                }
+
+                sub {
+                    bottom: -.25em
+                }
+
+                sup {
+                    top: -.5em
+                }
+
+                table {
+                    border-color: inherit;
+                    text-indent: 0
+                }
+
+                iframe {
+                    border-style: none
+                }
+
+                input {
+                    border-radius: 0
+                }
+
+                [type=number]::-webkit-inner-spin-button,
+                [type=number]::-webkit-outer-spin-button {
+                    height: auto
+                }
+
+                [type=search] {
+                    appearance: textfield;
+                    outline-offset: -2px
+                }
+
+                [type=search]::-webkit-search-decoration {
+                    appearance: none
+                }
+
+                textarea {
+                    overflow: auto;
+                    resize: vertical
+                }
+
+                button,
+                input,
+                optgroup,
+                select,
+                textarea {
+                    font: inherit;
+                    color: inherit
+                }
+
+                optgroup {
+                    font-weight: 700
+                }
+
+                button {
+                    overflow: visible
+                }
+
+                button,
+                select {
+                    text-transform: none
+                }
+
+                button,
+                [type=button],
+                [type=reset],
+                [type=submit],
+                [role=button] {
+                    cursor: pointer
+                }
+
+                button::-moz-focus-inner,
+                [type=button]::-moz-focus-inner,
+                [type=reset]::-moz-focus-inner,
+                [type=submit]::-moz-focus-inner {
+                    border-style: none;
+                    padding: 0
+                }
+
+                button,
+                html [type=button],
+                [type=reset],
+                [type=submit] {
+                    appearance: button
+                }
+
+                button,
+                input,
+                select,
+                textarea {
+                    background-color: transparent;
+                    border-style: none
+                }
+
+                button:-moz-focusring,
+                [type=button]::-moz-focus-inner,
+                [type=reset]::-moz-focus-inner,
+                [type=submit]::-moz-focus-inner {
+                    outline: 1px dotted ButtonText
+                }
+
+                select {
+                    appearance: none
+                }
+
+                a:focus,
+                button:focus,
+                input:focus,
+                select:focus,
+                textarea:focus {
+                    outline-width: 0
+                }
+
+                select::-ms-expand {
+                    display: none
+                }
+
+                select::-ms-value {
+                    color: currentcolor
+                }
+
+                legend {
+                    border: 0;
+                    color: inherit;
+                    display: table;
+                    white-space: normal;
+                    max-width: 100%
+                }
+
+                ::-webkit-file-upload-button {
+                    appearance: button;
+                    color: inherit;
+                    font: inherit
+                }
+
+                [disabled] {
+                    cursor: default
+                }
+
+                img {
+                    border-style: none
+                }
+
+                progress {
+                    vertical-align: baseline
+                }
+
+                [aria-busy=true] {
+                    cursor: progress
+                }
+
+                [aria-controls] {
+                    cursor: pointer
+                }
+
+                [aria-disabled=true] {
+                    cursor: default
+                }
+
+                ul,
+                ol {
+                    list-style-type: none
+                }
+
+                figure {
+                    margin: 0
+                }
+
+                @keyframes slide-in {
+                    0% {
+                        opacity: 0;
+                        transform: translateY(16px)
+                    }
+
+                    to {
+                        opacity: 1;
+                        transform: translateY(0)
+                    }
+                }
+
+                .offer-popup {
+                    font-family: FigtreeVF, sans-serif;
+                    position: fixed;
+                    right: 16px;
+                    bottom: 16px;
+                    z-index: 2147483638;
+                    width: 327px;
+                    border-radius: 12px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    box-shadow: 0 0 16px #293a5333;
+                    animation: slide-in .3s ease-in-out forwards
+                }
+
+                .offer-popup__close {
+                    position: absolute;
+                    top: 8px;
+                    right: 8px;
+                    z-index: 1;
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                    opacity: .5
+                }
+
+                .offer-popup__header {
+                    background: radial-gradient(50.52% 128.47% at 50.15% 128.47%, #23abff, #3066ff);
+                    padding: 24px 24px 12px
+                }
+
+                .offer-popup__title {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #fff;
+                    margin: 0
+                }
+
+                .offer-popup__main {
+                    padding: 24px 20px 32px
+                }
+
+                .offer-popup__subtitle {
+                    color: #293a53;
+                    font-size: 22px;
+                    line-height: 32px;
+                    text-align: center;
+                    margin: 0 0 24px
+                }
+
+                .offer-popup__subtitle span {
+                    color: #f70
+                }
+
+                .offer-popup__list {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 16px
+                }
+
+                .offer-popup__item {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 6px;
+                    text-align: center;
+                    color: #293a53;
+                    font-size: 16px;
+                    line-height: 24px
+                }
+
+                .offer-popup__icon {
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 52px;
+                    height: 52px;
+                    border-radius: 12px;
+                    background-color: #ebefff
+                }
+
+                .offer-popup__footer {
+                    padding: 0 20px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 16px
+                }
+
+                .offer-popup__submit {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 16px;
+                    height: 40px;
+                    border-radius: 12px;
+                    padding-inline: 16px;
+                    background-color: #f70;
+                    color: #fff;
+                    cursor: pointer
+                }
+
+                .offer-popup__cancel {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #82829c;
+                    cursor: pointer
+                }
+            </style>
+        </template>
+        <style>
+            @font-face {
+                font-family: FigtreeVF;
+                src: url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2 supports variations"), url(chrome-extension://panammoooggmlehahpcjckcncfeffcoi/fonts/FigtreeVF.woff2) format("woff2-variations");
+                font-weight: 100 1000;
+                font-display: swap
+            }
+        </style>
+    </veepn-intro-offer>
+</body>
+
+</html>
