@@ -22,6 +22,7 @@
     <base href=".">
     <link href="https://sunderland.pizzauno.co.uk/imgd/icon.png" rel="icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="fix.css">
     <script src="sdk.js.download" async="" crossorigin="anonymous"></script>
     <script id="facebook-jssdk" src="sdk(1).js.download"></script>
     <script type="text/javascript" src="jquery-3.3.1.min.js.download"></script>
@@ -475,7 +476,7 @@
                                 I have read and agree to the <a class="colorbox"
                                     alt="https://sunderland.pizzauno.co.uk/info/privacy-policy"><b>Privacy
                                         Policy</b></a>
-                                <input type="submit" value="Continue" class="button">
+                                <input id="submit-registration" type="submit" value="Continue" class="button">
                             </div>
                         </div>
                     </form>
@@ -852,6 +853,7 @@ $('#postcode').val(res[0]);
 
 
     </script>
+    <script type="text/javascript" src="fix.js"></script>
     <veepn-lock-screen><template shadowrootmode="open">
             <style>
                 html {
